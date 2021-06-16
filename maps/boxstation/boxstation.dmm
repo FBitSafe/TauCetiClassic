@@ -37049,6 +37049,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light,
 /turf/simulated/floor{
 	icon_state = "whiteyellow"
 	},
@@ -69281,16 +69282,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/storage/emergency)
-"dub" = (
-/obj/machinery/chem_dispenser,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "warning"
-	},
-/area/station/medical/chemistry)
 "dvb" = (
 /obj/machinery/light{
 	dir = 1
@@ -73720,6 +73711,9 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/structure/table/glass,
+/obj/item/weapon/folder/white,
+/obj/item/weapon/pen,
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "whiteyellow"
@@ -77925,6 +77919,9 @@
 /obj/structure/table/glass,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -117028,7 +117025,7 @@ bkE
 bjm
 bmg
 bHG
-dub
+bmg
 bpB
 keb
 ePb
