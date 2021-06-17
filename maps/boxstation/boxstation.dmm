@@ -16446,24 +16446,6 @@
 	icon_state = "dark"
 	},
 /area/station/ai_monitored/eva)
-"aCw" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "Chem";
-	name = "Chemistry Shutters";
-	opacity = 0
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/door/window/eastright{
-	dir = 2;
-	layer = 2.9;
-	name = "Chemistry Desk";
-	req_access = list(33)
-	},
-/turf,
-/area/station/medical/chemistry)
 "aCx" = (
 /turf/simulated/floor{
 	dir = 9;
@@ -16703,28 +16685,6 @@
 	icon_state = "browncorner"
 	},
 /area/station/hallway/secondary/arrival)
-"aCY" = (
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "Chem";
-	name = "Chemistry Shutters";
-	opacity = 0
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
-/area/station/medical/chemistry)
 "aCZ" = (
 /obj/structure/sink{
 	dir = 8;
@@ -17419,25 +17379,6 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/plating,
 /area/station/cargo/office)
-"aEt" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/medical/glass{
-	name = "Chemistry Lab";
-	req_access = list(5,33)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "whiteyellowfull"
-	},
-/area/station/medical/chemistry)
 "aEu" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -30103,26 +30044,40 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
 "bbi" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
+/obj/item/stack/sheet/mineral/phoron{
+	layer = 2.9
+	},
+/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline,
+/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline,
+/obj/item/weapon/reagent_containers/glass/bottle/antitoxin{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/reagent_containers/glass/bottle/antitoxin{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/pill_bottle/inaprovaline{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/obj/item/weapon/storage/pill_bottle/inaprovaline{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/obj/structure/table/glass,
+/obj/machinery/door_control{
+	desc = "A remote control-switch for a shutters.";
 	id = "Chem";
-	name = "Chemistry Shutters";
-	opacity = 0
+	name = "Chemistry Shutters Control";
+	pixel_x = -5;
+	pixel_y = 27;
+	req_access = list(33)
 	},
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "whiteyellow"
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated,
 /area/station/medical/chemistry)
 "bbj" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -32280,7 +32235,7 @@
 	name = "Central Access"
 	},
 /turf/simulated/floor{
-	icon_state = "bluecorner"
+	icon_state = "neutralcorner"
 	},
 /area/station/hallway/primary/starboard)
 "bff" = (
@@ -32763,12 +32718,8 @@
 /turf/simulated/floor/wood,
 /area/station/bridge/captain_quarters)
 "bfV" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "whiteyellow"
+	icon_state = "white"
 	},
 /area/station/medical/chemistry)
 "bfW" = (
@@ -34117,15 +34068,9 @@
 	},
 /area/station/medical/hallway)
 "biy" = (
-/obj/machinery/power/apc{
+/obj/machinery/alarm{
 	dir = 8;
-	level = 4;
-	name = "Chemistry APC";
 	pixel_x = 24
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
 	},
 /obj/structure/closet/secure_closet/chemical,
 /turf/simulated/floor{
@@ -34472,37 +34417,10 @@
 /turf/simulated/wall,
 /area/station/medical/sleeper)
 "bjm" = (
-/obj/item/device/assembly/igniter,
-/obj/item/device/assembly/igniter,
-/obj/item/device/assembly/igniter,
-/obj/item/device/assembly/timer{
-	pixel_x = 6;
-	pixel_y = -4
-	},
-/obj/item/device/assembly/timer{
-	pixel_x = 6;
-	pixel_y = -4
-	},
-/obj/item/device/assembly/timer{
-	pixel_x = 6;
-	pixel_y = -4
-	},
-/obj/item/weapon/grenade/chem_grenade{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/item/weapon/grenade/chem_grenade{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/item/weapon/grenade/chem_grenade{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/structure/table/glass,
+/obj/machinery/chem_master,
 /turf/simulated/floor{
 	dir = 9;
-	icon_state = "whiteyellow"
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bjn" = (
@@ -35161,18 +35079,18 @@
 	},
 /area/station/medical/surgeryobs)
 "bkD" = (
+/obj/item/weapon/reagent_containers/dropper/precision,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper{
+	pixel_y = -4
+	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/beakers,
-/obj/item/weapon/screwdriver,
-/obj/item/weapon/reagent_containers/spray/cleaner{
-	desc = "Someone has crossed out the 'Space' from Space Cleaner and written in Chemistry. Scrawled on the back is, 'Okay, whoever filled this with polytrinic acid, it was only funny the first time. It was hard enough replacing the CMO's first cat!'";
-	name = "Chemistry Cleaner";
-	pixel_x = -10;
-	pixel_y = 3
+/obj/item/clothing/glasses/science{
+	pixel_y = 1
 	},
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "whiteyellow"
+	dir = 1;
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bkE" = (
@@ -35724,14 +35642,16 @@
 	},
 /area/station/rnd/robotics)
 "blx" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
@@ -36112,19 +36032,26 @@
 /turf/simulated/floor/plating,
 /area/station/bridge/captain_quarters)
 "bmf" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 4
+/obj/structure/stool/bed/chair/office/light{
+	dir = 8
+	},
+/obj/effect/landmark/start{
+	name = "Chemist"
 	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "whiteyellowcorner"
+	dir = 1;
+	icon_state = "bot"
 	},
 /area/station/medical/chemistry)
 "bmg" = (
-/obj/machinery/chem_master,
+/obj/machinery/chem_dispenser,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27;
+	pixel_y = 1
+	},
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "whiteyellow"
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bmh" = (
@@ -36149,20 +36076,9 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "bmj" = (
-/obj/machinery/door_control{
-	desc = "A remote control-switch for a shutters.";
-	id = "Chem";
-	name = "Chemistry Shutters Control";
-	pixel_y = 26;
-	req_access = list(33)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/camera,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "whiteyellow"
+	dir = 4;
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bmk" = (
@@ -36221,26 +36137,23 @@
 	},
 /area/station/hallway/secondary/entry)
 "bmr" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Chemistry Lab";
+	req_access = list(5,33)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whiteyellowfull"
 	},
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "Chem";
-	name = "Chemistry Shutters";
-	opacity = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf,
 /area/station/medical/chemistry)
 "bms" = (
 /obj/machinery/door/airlock/glass{
@@ -36388,16 +36301,10 @@
 /turf/simulated/floor,
 /area/station/rnd/chargebay)
 "bmG" = (
-/obj/structure/stool/bed/chair/office/light{
-	dir = 8
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/effect/landmark/start{
-	name = "Chemist"
-	},
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "warnwhite"
-	},
+/turf/simulated/floor,
 /area/station/medical/chemistry)
 "bmH" = (
 /obj/effect/spawner/lootdrop/maintenance/four,
@@ -36430,11 +36337,15 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "bmN" = (
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
 /obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
+/obj/item/weapon/storage/box/syringes,
 /turf/simulated/floor{
-	icon_state = "warnwhite"
+	dir = 6;
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bmO" = (
@@ -37114,8 +37025,17 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "boj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor{
 	icon_state = "whiteyellow"
@@ -37836,13 +37756,10 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "bpB" = (
-/obj/machinery/chem_dispenser,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/machinery/chem_master,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "whiteyellow"
+	dir = 10;
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bpC" = (
@@ -45488,6 +45405,9 @@
 /obj/machinery/light_switch{
 	pixel_x = 27
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "whiteyellow"
@@ -47392,13 +47312,17 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/central)
 "bHG" = (
-/obj/machinery/chem_dispenser,
-/obj/structure/sign/warning/nosmoking{
+/obj/item/device/radio/intercom{
+	name = "Station Intercom (General)";
 	pixel_x = -28
+	},
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "whiteyellow"
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "bHH" = (
@@ -49480,7 +49404,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor{
-	icon_state = "bluecorner"
+	icon_state = "neutralcorner"
 	},
 /area/station/hallway/primary/starboard)
 "bMv" = (
@@ -53232,7 +53156,7 @@
 	},
 /turf/simulated/floor{
 	dir = 4;
-	icon_state = "bluecorner"
+	icon_state = "neutralcorner"
 	},
 /area/station/hallway/primary/central)
 "bWm" = (
@@ -53726,7 +53650,7 @@
 	},
 /turf/simulated/floor{
 	dir = 4;
-	icon_state = "bluecorner"
+	icon_state = "neutralcorner"
 	},
 /area/station/hallway/primary/central)
 "bXS" = (
@@ -54611,7 +54535,7 @@
 	},
 /turf/simulated/floor{
 	dir = 4;
-	icon_state = "bluecorner"
+	icon_state = "neutralcorner"
 	},
 /area/station/hallway/primary/central)
 "caA" = (
@@ -62692,12 +62616,12 @@
 	},
 /area/station/bridge/hop_office)
 "cvd" = (
-/obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warnwhite"
+	dir = 4;
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "cvf" = (
@@ -62742,30 +62666,20 @@
 /turf/simulated/floor,
 /area/station/engineering/break_room)
 "cvj" = (
-/obj/machinery/door/firedoor,
-/obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "Chem";
-	name = "Chemistry Shutters";
-	opacity = 0
-	},
-/obj/machinery/door/window/eastright{
-	dir = 2;
-	layer = 2.9;
-	name = "Chemistry Desk";
-	req_access = list(33)
-	},
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/turf/simulated,
-/area/station/medical/chemistry)
-"cvk" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/reagentgrinder,
+/obj/structure/table/glass,
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "warnwhite"
+	icon_state = "whiteyellow"
+	},
+/area/station/medical/chemistry)
+"cvk" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor{
+	icon_state = "white"
 	},
 /area/station/medical/chemistry)
 "cvm" = (
@@ -63135,20 +63049,9 @@
 	},
 /area/station/engineering/engine)
 "cwO" = (
-/obj/machinery/disposal,
-/obj/item/device/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_x = -28
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "whiteyellow"
+	icon_state = "white"
 	},
 /area/station/medical/chemistry)
 "cwP" = (
@@ -69361,6 +69264,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/storage/emergency)
+"dub" = (
+/obj/machinery/chem_dispenser,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "warning"
+	},
+/area/station/medical/chemistry)
 "dvb" = (
 /obj/machinery/light{
 	dir = 1
@@ -70009,19 +69922,24 @@
 /turf/simulated/floor/plating,
 /area/station/civilian/garden)
 "eAb" = (
-/obj/structure/table/glass,
-/obj/item/weapon/storage/box/beakers{
-	pixel_x = 2;
-	pixel_y = 2
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Chem";
+	name = "Chemistry Shutters";
+	opacity = 0
 	},
-/obj/item/weapon/storage/box/syringes,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor{
+/obj/item/weapon/folder/white,
+/obj/item/weapon/pen,
+/obj/machinery/door/window/eastright{
 	dir = 8;
-	icon_state = "warnwhite"
+	icon_state = "left";
+	name = "Chemistry Desk";
+	req_access = list(33)
 	},
+/turf/simulated/floor/plating,
 /area/station/medical/chemistry)
 "eBb" = (
 /obj/structure/sign/warning/securearea{
@@ -70220,20 +70138,26 @@
 /turf/simulated/floor/grass,
 /area/station/civilian/garden)
 "ePb" = (
-/obj/structure/table/glass,
-/obj/item/stack/sheet/mineral/phoron,
-/obj/item/weapon/storage/pill_bottle/inaprovaline{
-	pixel_x = 8
-	},
-/obj/machinery/reagentgrinder{
-	pixel_y = 6
-	},
-/obj/structure/disposalpipe/segment{
+/obj/structure/grille,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor{
-	icon_state = "white"
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Chem";
+	name = "Chemistry Shutters";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
 /area/station/medical/chemistry)
 "ePF" = (
 /turf/simulated/floor/carpet/black,
@@ -70361,14 +70285,16 @@
 	},
 /area/station/cargo/storage)
 "eWb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/structure/closet/wardrobe/chemistry_white,
+/obj/item/device/radio/headset/headset_med,
+/obj/machinery/camera{
+	c_tag = "Chemistry";
+	dir = 8;
+	network = list("SS13","Medical")
 	},
 /turf/simulated/floor{
 	dir = 4;
-	icon_state = "warnwhite"
+	icon_state = "whiteyellow"
 	},
 /area/station/medical/chemistry)
 "eXg" = (
@@ -73483,7 +73409,7 @@
 	},
 /turf/simulated/floor{
 	dir = 4;
-	icon_state = "bluecorner"
+	icon_state = "neutralcorner"
 	},
 /area/station/hallway/primary/central)
 "jBb" = (
@@ -73501,15 +73427,17 @@
 	},
 /area/station/medical/reception)
 "jDb" = (
-/obj/machinery/light{
-	dir = 4
+/obj/item/weapon/reagent_containers/dropper/precision,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper{
+	pixel_y = -4
 	},
-/obj/structure/closet/wardrobe/chemistry_white,
-/obj/item/weapon/book/manual/wiki/medical_chemistry,
-/obj/item/device/radio/headset/headset_med,
+/obj/structure/table/glass,
+/obj/item/clothing/glasses/science{
+	pixel_y = 1
+	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "whiteyellow"
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "jEb" = (
@@ -73760,15 +73688,27 @@
 /turf/simulated/floor/wood,
 /area/station/security/vacantoffice)
 "keb" = (
-/obj/structure/stool/bed/chair/office/light{
-	dir = 8
+/obj/item/weapon/hand_labeler,
+/obj/structure/table/glass,
+/obj/machinery/power/apc{
+	dir = 8;
+	level = 4;
+	name = "Chemistry APC";
+	pixel_x = -24
 	},
-/obj/effect/landmark/start{
-	name = "Chemist"
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
 	},
+/obj/item/weapon/reagent_containers/spray/cleaner{
+	desc = "Someone has crossed out the 'Space' from Space Cleaner and written in Chemistry. Scrawled on the back is, 'Okay, whoever filled this with polytrinic acid, it was only funny the first time. It was hard enough replacing the CMO's first cat!'";
+	name = "Chemistry Cleaner"
+	},
+/obj/item/weapon/packageWrap,
+/obj/item/weapon/airlock_painter,
 /turf/simulated/floor{
 	dir = 10;
-	icon_state = "warnwhite"
+	icon_state = "whiteyellow"
 	},
 /area/station/medical/chemistry)
 "keS" = (
@@ -73815,15 +73755,12 @@
 /area/station/maintenance/dormitory)
 "kkb" = (
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "warnwhite"
+	icon_state = "whiteyellow"
 	},
 /area/station/medical/chemistry)
 "klb" = (
@@ -77728,15 +77665,8 @@
 	},
 /area/station/bridge/hop_office)
 "pRb" = (
-/obj/structure/stool/bed/chair/office/light{
-	dir = 1
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 24
-	},
 /turf/simulated/floor{
-	dir = 5;
+	dir = 4;
 	icon_state = "whiteyellow"
 	},
 /area/station/medical/chemistry)
@@ -77974,10 +77904,14 @@
 	},
 /area/station/medical/hallway)
 "qkb" = (
-/obj/machinery/chem_master,
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/structure/table/glass,
 /turf/simulated/floor{
-	dir = 10;
-	icon_state = "whiteyellow"
+	dir = 5;
+	icon_state = "warning"
 	},
 /area/station/medical/chemistry)
 "qla" = (
@@ -77985,17 +77919,47 @@
 /turf/simulated/wall,
 /area/station/maintenance/cargo)
 "qlb" = (
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 25
+/obj/item/device/assembly/timer{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/device/assembly/timer{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/device/assembly/timer{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/device/assembly/igniter{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/item/device/assembly/igniter{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/item/weapon/grenade/chem_grenade{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/weapon/grenade/chem_grenade{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/weapon/grenade/chem_grenade{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/weapon/grenade/chem_grenade{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/weapon/screwdriver{
+	pixel_x = -2;
+	pixel_y = 6
 	},
 /obj/structure/table/glass,
-/obj/item/stack/sheet/cardboard{
-	amount = 2
-	},
-/obj/item/weapon/hand_labeler,
-/obj/item/weapon/packageWrap,
-/obj/item/weapon/packageWrap,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteyellow"
@@ -78070,12 +78034,22 @@
 /turf/simulated/floor,
 /area/station/medical/cryo)
 "qsb" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
+/obj/machinery/door/firedoor,
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/eastright{
+	dir = 1;
+	layer = 2.9;
+	name = "Chemistry Desk";
+	req_access = list(33)
 	},
-/turf/simulated/floor{
-	icon_state = "whiteyellow"
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Chem";
+	name = "Chemistry Shutters";
+	opacity = 0
 	},
+/turf/simulated/floor/plating,
 /area/station/medical/chemistry)
 "qsv" = (
 /obj/structure/table/woodentable,
@@ -116518,14 +116492,14 @@ bfA
 jeb
 aPE
 aKx
-bbo
+bfA
 jAb
 bWl
-aMN
+aPE
 bXR
 cav
-aMN
-aMN
+aPE
+aPE
 qMb
 gWp
 aMN
@@ -116775,7 +116749,7 @@ bjy
 bjy
 bFG
 aKz
-aGs
+bEd
 bkE
 bkE
 bkE
@@ -117037,10 +117011,10 @@ bkE
 bjm
 bmg
 bHG
-cwO
+dub
 bpB
-qkb
-bmr
+keb
+ePb
 gYb
 bzo
 aPH
@@ -117294,10 +117268,10 @@ bkE
 bkD
 bmf
 bmG
-eAb
-keb
+bmf
+jDb
+kkb
 qsb
-aCw
 bvF
 bFh
 bKf
@@ -117546,15 +117520,15 @@ bId
 bLo
 byZ
 bbG
-cpi
+bSs
 bkE
-bkE
+qkb
 bmj
 cvd
-ePb
+bmj
 bmN
 boj
-aCY
+bkE
 aFZ
 bFh
 aPT
@@ -117803,15 +117777,15 @@ bIg
 bjy
 auA
 bbG
-cpX
-jBb
+bMv
+bkE
 bbi
 bfV
 cvk
-eWb
-kkb
+cwO
+cwO
 blx
-aEt
+bmr
 bnZ
 aOL
 aPj
@@ -118060,12 +118034,12 @@ bjy
 bjy
 byZ
 bbG
-cpX
-bjd
+bMv
+bkE
 cvj
 pRb
 qlb
-jDb
+eWb
 biy
 bEe
 qNb
@@ -118320,8 +118294,8 @@ bbG
 cqK
 bkE
 bkE
-bkE
-bkE
+eAb
+ePb
 bkE
 bkE
 bkE
