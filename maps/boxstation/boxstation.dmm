@@ -70004,15 +70004,16 @@
 "eAb" = (
 /obj/structure/table/glass,
 /obj/item/stack/sheet/mineral/phoron,
-/obj/item/weapon/storage/pill_bottle/inaprovaline{
-	pixel_x = 8
-	},
 /obj/machinery/reagentgrinder{
 	pixel_y = 6
+	},
+/obj/item/weapon/storage/pill_bottle/inaprovaline{
+	pixel_x = 8
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/item/weapon/storage/pill_bottle/inaprovaline,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
